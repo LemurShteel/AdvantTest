@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05986633f7c02434fa88abeff1fa96c0, type: 3}
+  m_Name: NamingProvider
+  m_EditorClassIdentifier: 
+  _namingKeys:
+  - key: business_1
+    name: "\u0411\u0438\u0437\u043D\u0435\u0441 1"
+  - key: business_2
+    name: "\u0411\u0438\u0437\u043D\u0435\u0441 2"
+  - key: business_3
+    name: "\u0411\u0438\u0437\u043D\u0435\u0441 3"
+  - key: business_4
+    name: "\u0411\u0438\u0437\u043D\u0435\u0441 4"
+  - key: business_5
+    name: "\u0411\u0438\u0437\u043D\u0435\u0441 5"
+  - key: first_upgrade
+    name: "\"\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 1\""
+  - key: second_upgrade
+    name: "\"\u041D\u0430\u0437\u0432\u0430\u043D\u0438\u0435 2\""

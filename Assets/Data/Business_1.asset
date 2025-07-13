@@ -12,15 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0e48fbe2d9d82742bff588ae2d2be0c, type: 3}
   m_Name: Business_1
   m_EditorClassIdentifier: 
-  businessId: business_1
-  businessNameLocalizationKey: business_1
-  baseIncomeDelaySeconds: 3
-  baseCost: 3
-  baseIncome: 3
-  initialLevel: 1
-  firstUpgradeLocalizationKey: first_upgrade
-  firstUpgradeCost: 50
-  firstUpgradeMultiplier: 0.5
-  secondUpgradeLocalizationKey: second_upgrade
-  secondUpgradeCost: 400
-  secondUpgradeMultiplier: 1
+  _businessId: business_1
+  _businessNameKey: business_1
+  _baseIncomeDelaySeconds: 3
+  _baseCost: 3
+  _baseIncome: 3
+  _initialLevel: 1
+  _firstUpgradeNameKey: first_upgrade
+  _firstUpgradeCost: 50
+  _firstUpgradeMultiplier: 0.5
+  _secondUpgradeNameKey: second_upgrade
+  _secondUpgradeCost: 400
+  _secondUpgradeMultiplier: 1

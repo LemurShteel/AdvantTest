@@ -48,13 +48,13 @@ namespace UI
  
         public void Init(IEcsSystems systems, int businessId, BusinessDescription businessDescription, INamingProvider namingProvider)
         {
-            _businessName.text = namingProvider.GetName(businessDescription.BusinessNameLocalizationKey);
+            _businessName.text = namingProvider.GetName(businessDescription.BusinessNameKey);
 
-            _firstUpgradeName.text = namingProvider.GetName(businessDescription.FirstUpgradeLocalizationKey);
+            _firstUpgradeName.text = namingProvider.GetName(businessDescription.FirstUpgradeNameKey);
             _firstUpgradeCost.SetValue(businessDescription.FirstUpgradeCost);
             _firstUpgradeIncome.SetValue(businessDescription.FirstUpgradeMultiplier * 100f);
 
-            _secondUpgradeName.text = namingProvider.GetName(businessDescription.SecondUpgradeLocalizationKey);
+            _secondUpgradeName.text = namingProvider.GetName(businessDescription.SecondUpgradeNameKey);
             _secondUpgradeCost.SetValue(businessDescription.SecondUpgradeCost);
             _secondUpgradeIncome.SetValue(businessDescription.SecondUpgradeMultiplier * 100f);
         

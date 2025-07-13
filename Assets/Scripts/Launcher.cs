@@ -1,3 +1,4 @@
+using Components;
 using Leopotam.EcsLite;
 using Providers;
 using Saving;
@@ -33,7 +34,6 @@ public class Launcher : MonoBehaviour
         _systems.Add(new BusinessUpgradeSystem(_descriptionsProvder));
         _systems.Add(new CreateBusinessViewLinkSystem(_descriptionsProvder));
         _systems.Add(new UpdateViewProgressSystem(_descriptionsProvder));
-        _systems.Add(new SaveGameOnExitSystem(_stateSave));
     
         _businessesView.Init(_systems, _descriptionsProvder, _namingProvider);
         _systems.Init();
@@ -43,9 +43,19 @@ public class Launcher : MonoBehaviour
     {
         _systems.Run();
     }
-    
+
+    private void OnApplicationPause(bool pauseStatus)
+    {
+        if (pauseStatus && _systems != null)
+        {
+            _stateSave.SaveToPrefs(_systems);
+        }
+    }
+
     private void OnApplicationQuit()
     {
+        _stateSave.SaveToPrefs(_systems);
+
         if (_systems != null)
         {
             _systems.Destroy();
